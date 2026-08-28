@@ -1,44 +1,100 @@
-__pycache__
-*.ckpt
-*.safetensors
-*.pth
+# ==========================================
+# Stable Diffusion WebUI - Git Ignore
+# ==========================================
+# Local/generated configuration
+config_states/
+
+# Downloaded dependency repositories
+repositories/
+# Python virtual environment
+venv/
+
+# ==========================================
+# AI Models
+# ==========================================
+
+# Stable Diffusion checkpoints
+models/
+
+# ==========================================
+# Generated / Temporary Files
+# ==========================================
+
+outputs/
+tmp/
+cache/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ==========================================
+# Logs
+# ==========================================
+
+*.log
+
+# ==========================================
+# Download / Temporary Files
+# ==========================================
+
+*.part
+*.aria2
+*.tmp
+*.temp
+
+# ==========================================
+# CivitAI / Model Download Cache
+# ==========================================
+
+*.download
+*.crdownload
+
+# ==========================================
+# IDE / Editor
+# ==========================================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# ==========================================
+# Operating System
+# ==========================================
+
 .DS_Store
-/ESRGAN/*
-/SwinIR/*
-/repositories
-/venv
-/tmp
-/model.ckpt
-/models/**/*
-/GFPGANv1.3.pth
-/gfpgan/weights/*.pth
-/ui-config.json
-/outputs
-/config.json
-/log
-/webui.settings.bat
-/embeddings
-/styles.csv
-/params.txt
-/styles.csv.bak
-/webui-user.bat
-/webui-user.sh
-/interrogate
-/user.css
-/.idea
-notification.mp3
-/SwinIR
-/textual_inversion
-.vscode
-/extensions
-/test/stdout.txt
-/test/stderr.txt
-/cache.json*
-/config_states/
-/node_modules
-/package-lock.json
-/.coverage*
-/test/test_outputs
-/cache
-trace.json
-/sysinfo-????-??-??-??-??.json
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Environment / Secrets
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Python tooling
+# ==========================================
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Build / Distribution
+# ==========================================
+
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# Jupyter
+# ==========================================
+
+.ipynb_checkpoints/

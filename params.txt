@@ -1,0 +1,6 @@
+cinematic portrait of a young man standing in a futuristic city,
+realistic photography, detailed face, dramatic lighting,
+cinematic composition, shallow depth of field
+Negative prompt: blurry, low quality, distorted, deformed, bad anatomy,
+extra fingers, extra limbs, duplicate, watermark, text
+Steps: 28, Sampler: DPM++ 2M, Schedule type: Karras, CFG scale: 7, Seed: 1519728039, Size: 1024x1024, Model hash: dd08fa32f9, Model: juggernautXL_ragnarok_1659952, ControlNet 0: "Module: depth_midas, Model: diffusers_xl_depth_mid [39c49e13], Weight: 1.0, Resize Mode: Just Resize, Processor Res: 512, Threshold A: 0.5, Threshold B: 0.5, Guidance Start: 0.0, Guidance End: 1.0, Pixel Perfect: True, Control Mode: Balanced", Version: v1.10.1
