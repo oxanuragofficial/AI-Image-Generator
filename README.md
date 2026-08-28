@@ -3,68 +3,173 @@ A web interface for Stable Diffusion, implemented using Gradio library.
 
 ![](screenshot.png)
 
-## Features
-[Detailed feature showcase with images](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features):
-- Original txt2img and img2img modes
-- One click install and run script (but you still must install python and git)
-- Outpainting
-- Inpainting
-- Color Sketch
-- Prompt Matrix
-- Stable Diffusion Upscale
-- Attention, specify parts of text that the model should pay more attention to
-    - a man in a `((tuxedo))` - will pay more attention to tuxedo
-    - a man in a `(tuxedo:1.21)` - alternative syntax
-    - select text and press `Ctrl+Up` or `Ctrl+Down` (or `Command+Up` or `Command+Down` if you're on a MacOS) to automatically adjust attention to selected text (code contributed by anonymous user)
-- Loopback, run img2img processing multiple times
-- X/Y/Z plot, a way to draw a 3 dimensional plot of images with different parameters
-- Textual Inversion
-    - have as many embeddings as you want and use any names you like for them
-    - use multiple embeddings with different numbers of vectors per token
-    - works with half precision floating point numbers
-    - train embeddings on 8GB (also reports of 6GB working)
-- Extras tab with:
-    - GFPGAN, neural network that fixes faces
-    - CodeFormer, face restoration tool as an alternative to GFPGAN
-    - RealESRGAN, neural network upscaler
-    - ESRGAN, neural network upscaler with a lot of third party models
-    - SwinIR and Swin2SR ([see here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/pull/2092)), neural network upscalers
-    - LDSR, Latent diffusion super resolution upscaling
-- Resizing aspect ratio options
-- Sampling method selection
-    - Adjust sampler eta values (noise multiplier)
-    - More advanced noise setting options
-- Interrupt processing at any time
-- 4GB video card support (also reports of 2GB working)
-- Correct seeds for batches
-- Live prompt token length validation
-- Generation parameters
-     - parameters you used to generate images are saved with that image
-     - in PNG chunks for PNG, in EXIF for JPEG
-     - can drag the image to PNG info tab to restore generation parameters and automatically copy them into UI
-     - can be disabled in settings
-     - drag and drop an image/text-parameters to promptbox
-- Read Generation Parameters Button, loads parameters in promptbox to UI
-- Settings page
-- Running arbitrary python code from UI (must run with `--allow-code` to enable)
-- Mouseover hints for most UI elements
-- Possible to change defaults/mix/max/step values for UI elements via text config
-- Tiling support, a checkbox to create images that can be tiled like textures
-- Progress bar and live image generation preview
-    - Can use a separate neural network to produce previews with almost none VRAM or compute requirement
-- Negative prompt, an extra text field that allows you to list what you don't want to see in generated image
-- Styles, a way to save part of prompt and easily apply them via dropdown later
-- Variations, a way to generate same image but with tiny differences
-- Seed resizing, a way to generate same image but at slightly different resolution
-- CLIP interrogator, a button that tries to guess prompt from an image
-- Prompt Editing, a way to change prompt mid-generation, say to start making a watermelon and switch to anime girl midway
-- Batch Processing, process a group of files using img2img
-- Img2img Alternative, reverse Euler method of cross attention control
-- Highres Fix, a convenience option to produce high resolution pictures in one click without usual distortions
-- Reloading checkpoints on the fly
-- Checkpoint Merger, a tab that allows you to merge up to 3 checkpoints into one
-- [Custom scripts](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Custom-Scripts) with many extensions from community
-- [Composable-Diffusion](https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/), a way to use multiple prompts at once
+<div align="center">
+
+<!-- ==================== HERO HEADER ==================== -->
+
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,35:061B2E,70:003B5C,100:00BFFF&height=220&section=header&text=ANURAG%20KUMAR&fontSize=58&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=FRONTEND%20DEVELOPER%20%7C%20ASPIRING%20FULL-STACK%20ENGINEER&descSize=17&descAlignY=58&descColor=67E8F9"
+  width="100%"
+  alt="Anurag Kumar - Frontend Developer"
+/>
+
+<!-- Tech identity -->
+
+<img
+  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=BUILDING+FOR+THE+WEB+%7C+LEARNING+EVERY+DAY;FULL-STACK+DEVELOPMENT+%7C+JAVA+%7C+DSA;TURNING+IDEAS+INTO+REAL+PROJECTS"
+  alt="Typing animation"
+/>
+
+<br/>
+
+<!-- Primary Actions -->
+
+<a href="https://anurag-portfolio-webdev.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/🌐%20PORTFOLIO-00BFFF?style=for-the-badge&labelColor=020617" alt="Portfolio"/>
+</a>
+&nbsp;
+<a href="mailto:hindvansianurag@gmail.com">
+  <img src="https://img.shields.io/badge/📧%20CONTACT-00BFFF?style=for-the-badge&labelColor=020617" alt="Contact"/>
+</a>
+
+<br/><br/>
+
+<img
+  src="https://komarev.com/ghpvc/?username=oxanuragofficial&style=flat-square&color=00BFFF&label=PROFILE+VIEWS"
+  alt="Profile views"
+/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 👋 About Me
+
+**Frontend Developer** focused on building clean, responsive, and user-friendly web experiences.
+
+🌱 Learning **Full-Stack Development, Java & DSA**
+
+🏢 Building **Bharat Webstudio**
+
+💡 Interested in **Web Development & Software Engineering**
+
+🎯 Goal: Become a **Full-Stack Engineer**
+
+> **Build with purpose. Learn continuously. Keep improving.**
+
+</div>
+
+---
+
+<div align="center">
+
+## 🛠️ Tech Stack
+
+<img src="https://skillicons.dev/icons?i=c,cpp,python,javascript,html,css,git,github,vscode,vercel" />
+
+</div>
+
+---
+
+<div align="center">
+
+## 🚀 Featured Work
+
+### 🏢 Bharat Webstudio
+
+Modern websites and digital experiences for businesses.
+
+<br/>
+
+<a href="https://oxanuragofficial.github.io/bharat-webstudio-official/" target="_blank">
+<img src="https://img.shields.io/badge/VIEW%20PROJECT-00BFFF?style=for-the-badge&labelColor=050505" alt="View Project"/>
+</a>
+
+<a href="https://anurag-portfolio-webdev.netlify.app/" target="_blank">
+<img src="https://img.shields.io/badge/MY%20PORTFOLIO-00BFFF?style=for-the-badge&labelColor=050505" alt="My Portfolio"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🔥 GitHub Contribution Streak
+
+<img src="https://github-readme-streak-stats-eight.vercel.app/?user=oxanuragofficial&theme=dark&background=000000&border=00BFFF&stroke=00BFFF&ring=00BFFF&fire=00BFFF&currStreakNum=00BFFF&sideNums=00BFFF&currStreakLabel=00BFFF&sideLabels=00BFFF&dates=FFFFFF&hide_border=false" alt="GitHub Contribution Streak"/>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🏆 Coding Profiles
+
+<a href="https://leetcode.com/oxanuragofficial" target="_blank">
+<img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=00BFFF" alt="LeetCode"/>
+</a>
+
+<a href="https://www.codechef.com/users/oxanura" target="_blank">
+<img src="https://img.shields.io/badge/CodeChef-000000?style=for-the-badge&logo=codechef&logoColor=00BFFF" alt="CodeChef"/>
+</a>
+
+<a href="https://codeforces.com/profile/oxanuragofficial" target="_blank">
+<img src="https://img.shields.io/badge/Codeforces-000000?style=for-the-badge&logo=codeforces&logoColor=00BFFF" alt="Codeforces"/>
+</a>
+
+<a href="https://www.hackerrank.com/profile/hindvansianurag" target="_blank">
+<img src="https://img.shields.io/badge/HackerRank-000000?style=for-the-badge&logo=hackerrank&logoColor=00BFFF" alt="HackerRank"/>
+</a>
+
+</div>
+
+---
+
+<div align="center">
+
+## 🐍 Contribution Snake
+
+<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake"/>
+
+> 🟢 The more I code, the longer the snake grows! 🚀
+
+</div>
+
+---
+
+<div align="center">
+
+## 🤝 Let's Connect
+
+<a href="https://linkedin.com/in/oxanuragofficial" target="_blank">
+<img src="https://img.shields.io/badge/LinkedIn-00BFFF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050505" alt="LinkedIn"/>
+</a>
+
+<a href="https://instagram.com/oxanuragofficial" target="_blank">
+<img src="https://img.shields.io/badge/Instagram-00BFFF?style=for-the-badge&logo=instagram&logoColor=white&labelColor=050505" alt="Instagram"/>
+</a>
+
+<a href="mailto:hindvansianurag@gmail.com">
+<img src="https://img.shields.io/badge/Gmail-00BFFF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=050505" alt="Gmail"/>
+</a>
+
+### 💙 Learn. Build. Improve. 🚀
+
+<br/>
+
+<!-- ==================== FOOTER ==================== -->
+
+<img
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,35:006B8F,70:061B2E,100:020617&height=170&section=footer&animation=fadeIn"
+  width="100%"
+  alt="Footer"
+/>
+
+</div>once
      - separate prompts using uppercase `AND`
      - also supports weights for prompts: `a cat :1.2 AND a dog AND a penguin :2.2`
 - No token limit for prompts (original stable diffusion lets you use up to 75 tokens)
