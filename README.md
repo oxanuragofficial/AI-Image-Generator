@@ -1,51 +1,59 @@
 # 🎨 AI Image Generator
 
-A ready-to-use AI image generation environment for Windows with a simple setup, multiple image-generation models, ControlNet support, and CivitAI model management.
-
-> **Recommended:** NVIDIA GPU with at least 6 GB VRAM.
+A ready-to-use **AI Image Generator for Windows** with multiple image-generation models, ControlNet, CivitAI Browser+, and support for both SD 1.5 and SDXL workflows.
 
 ---
 
-## ✨ What Is Included
+## ✨ Features
 
-This setup already contains:
-
-* AI image generation WebUI
-* SD 1.5 model
-* SDXL models
-* ControlNet models
-* ControlNet preprocessors
-* CivitAI Browser Plus
-* VAE support
-* Image generation tools
-* txt2img
-* img2img
-* Extras
-* PNG Info
-* Checkpoint Merger
-* LoRA support
-* ControlNet
-* OpenPose
-* Canny
-* Depth
-* Lineart
-* SoftEdge
+* 🖼️ Text-to-Image generation
+* 🔄 Image-to-Image generation
+* 🎨 Multiple AI checkpoints
+* 🎛️ ControlNet
+* 🧍 OpenPose
+* ✏️ Canny
+* 🖌️ Lineart
+* 🌊 SoftEdge
+* 🏔️ Depth
+* ⚡ SDXL Lightning generation
+* 📦 CivitAI Browser+
+* 🔍 PNG Info
+* 🛠️ Extras
+* 🔀 Checkpoint Merger
+* 🎯 LoRA support
 
 ---
 
-# 📋 Requirements
+# 💻 Requirements
 
-## Windows
+### Operating System
 
-Windows 10/11 recommended.
+* Windows 10
+* Windows 11
 
-## Python — REQUIRED
+### GPU
 
-**Python 3.10.6 is required for this setup.**
+An NVIDIA GPU is strongly recommended.
 
-Do **not** use Python 3.14 for this installation.
+For SDXL, **8 GB+ VRAM is recommended**.
 
-### Download Python 3.10.6
+The setup can work with lower VRAM using appropriate settings, but generation will be slower and some models may require VRAM optimization.
+
+---
+
+# 🐍 Python Requirement
+
+## ⚠️ Python 3.10.6 REQUIRED
+
+This setup uses:
+
+```text
+Python 3.10.6
+```
+
+**Do not use Python 3.14 for this setup.**
+
+Download Python 3.10.6:
 
 [![Download Python 3.10.6](https://img.shields.io/badge/Download-Python%203.10.6-blue?style=for-the-badge)](https://www.python.org/downloads/release/python-3106/)
 
@@ -67,81 +75,59 @@ Required:
 Python 3.10.6
 ```
 
-You can also verify the exact Python used by this setup:
+---
+
+# 📥 Download the Project
+
+Clone the repository:
 
 ```powershell
-.\venv\Scripts\python.exe --version
+git clone https://github.com/oxanuragofficial/AI-Image-Generator.git
 ```
 
-Expected:
+Enter the folder:
 
-```text
-Python 3.10.6
+```powershell
+cd AI-Image-Generator
 ```
 
 ---
 
-# 🚀 Quick Start
+# 🚀 Start the AI Image Generator
 
-Open PowerShell inside the project folder:
-
-```powershell
-cd C:\stable-diffusion-webui
-```
-
-Then start the AI Image Generator:
+Run:
 
 ```powershell
 .\webui-user.bat
 ```
 
-After startup, open:
+After startup, open the local address shown in the terminal.
+
+Usually:
 
 ```text
 http://127.0.0.1:7860
 ```
 
-> If your terminal shows a different local port, use the URL displayed in the terminal.
-
 ---
 
-# 🖥️ First Launch
+# 🧠 AI Models
 
-When the interface opens, you will see:
-
-```text
-txt2img
-img2img
-Extras
-PNG Info
-Checkpoint Merger
-Train
-CivitAI Browser+
-Settings
-Extensions
-```
-
-The main generation page is **txt2img**.
-
----
-
-# 🧠 Included AI Models
-
-The setup currently contains the following checkpoints.
+The project supports both **SD 1.5** and **SDXL** models.
 
 ## SD 1.5
 
 ### Stable Diffusion v1.5
 
-File:
-
-```text
-models/Stable-diffusion/v1-5-pruned-emaonly.safetensors
-```
-
 Download:
 
-[![Download SD 1.5](https://img.shields.io/badge/Download-SD%201.5-blue?style=for-the-badge)](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+[![Download SD 1.5](https://img.shields.io/badge/Download-Stable%20Diffusion%201.5-blue?style=for-the-badge)](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+
+Place the checkpoint in:
+
+```text
+models/Stable-diffusion/
+```
 
 ---
 
@@ -149,59 +135,86 @@ Download:
 
 ### Juggernaut XL
 
-File:
-
-```text
-models/Stable-diffusion/juggernautXL_ragnarok_1659952.safetensors
-```
-
 Download:
 
 [![Download Juggernaut XL](https://img.shields.io/badge/Download-Juggernaut%20XL-purple?style=for-the-badge)](https://civitai.com/models/133005/juggernaut-xl)
+
+Place the file in:
+
+```text
+models/Stable-diffusion/
+```
 
 ---
 
 ### DreamShaper XL Lightning
 
-File:
-
-```text
-models/Stable-diffusion/dreamshaperXL_lightningDPMSDE_282807.safetensors
-```
-
 Download:
 
-[![Download DreamShaper XL Lightning](https://img.shields.io/badge/Download-DreamShaper%20XL-purple?style=for-the-badge)](https://civitai.com/models/112902/dreamshaper-xl-lightning)
+[![Download DreamShaper XL Lightning](https://img.shields.io/badge/Download-DreamShaper%20XL%20Lightning-purple?style=for-the-badge)](https://civitai.com/models/112902/dreamshaper-xl-lightning)
+
+Place the file in:
+
+```text
+models/Stable-diffusion/
+```
+
+This model is useful when you want **faster SDXL generation**.
 
 ---
 
-## Realistic Vision
-
-File:
-
-```text
-models/Stable-diffusion/realisticVisionV60B1_v51HyperVAE_418901.safetensors
-```
+### Realistic Vision
 
 Download:
 
 [![Download Realistic Vision](https://img.shields.io/badge/Download-Realistic%20Vision-purple?style=for-the-badge)](https://civitai.com/models/4201/realistic-vision-v60-b1)
 
+Place the file in:
+
+```text
+models/Stable-diffusion/
+```
+
+---
+
+# 📂 Model Folder
+
+All checkpoints should be placed here:
+
+```text
+AI-Image-Generator/
+└── models/
+    └── Stable-diffusion/
+```
+
+Example:
+
+```text
+models/
+└── Stable-diffusion/
+    ├── v1-5-pruned-emaonly.safetensors
+    ├── realisticVisionV60B1_v51HyperVAE_418901.safetensors
+    ├── juggernautXL_ragnarok_1659952.safetensors
+    └── dreamshaperXL_lightningDPMSDE_282807.safetensors
+```
+
+After adding a model, restart the WebUI or refresh the checkpoint list.
+
 ---
 
 # 🎛️ ControlNet
 
-ControlNet is included and already configured with the project.
+ControlNet is included in the project.
 
-Location:
+Folder:
 
 ```text
 models/ControlNet/
 ```
 
-Included ControlNet models:
+## Included ControlNet Models
 
-| Model      | File                                 |
+| ControlNet | Model                                |
 | ---------- | ------------------------------------ |
 | Canny      | `control_v11p_sd15_canny.pth`        |
 | Depth      | `control_v11f1p_sd15_depth.pth`      |
@@ -213,91 +226,135 @@ Included ControlNet models:
 
 ---
 
-# 🧩 How To Use ControlNet
+# 📥 ControlNet Downloads
 
-1. Open **txt2img**.
-2. Scroll down to **ControlNet**.
-3. Enable **ControlNet Unit 0**.
-4. Upload your reference image.
-5. Select the appropriate **Control Type**.
-6. Select the **Preprocessor**.
-7. Select the ControlNet **Model**.
-8. Enter your prompt.
-9. Click **Generate**.
-
-Example:
-
-```text
-Control Type:
-OpenPose
-
-Preprocessor:
-OpenPose
-
-Model:
-control_v11p_sd15_openpose
-```
-
----
-
-# 🎯 ControlNet Model Guide
+If you need to reinstall the ControlNet models:
 
 ### Canny
 
-Use for:
-
-* Edges
-* Outlines
-* Preserving image structure
-
-```text
-Control Type → Canny
-```
+[![Download Canny](https://img.shields.io/badge/Download-ControlNet%20Canny-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
 
 ### Depth
 
-Use for:
-
-* 3D structure
-* Depth information
-* Scene composition
-
-```text
-Control Type → Depth
-```
+[![Download Depth](https://img.shields.io/badge/Download-ControlNet%20Depth-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
 
 ### OpenPose
 
-Use for:
+[![Download OpenPose](https://img.shields.io/badge/Download-ControlNet%20OpenPose-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
+
+### Lineart
+
+[![Download Lineart](https://img.shields.io/badge/Download-ControlNet%20Lineart-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
+
+### SoftEdge
+
+[![Download SoftEdge](https://img.shields.io/badge/Download-ControlNet%20SoftEdge-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet-v1-1)
+
+---
+
+# 🧩 ControlNet Setup
+
+Open:
+
+```text
+txt2img
+```
+
+Scroll to:
+
+```text
+ControlNet
+```
+
+Then:
+
+1. Enable **ControlNet Unit 0**
+2. Upload your reference image
+3. Select the appropriate Control Type
+4. Select the Preprocessor
+5. Select the ControlNet Model
+6. Set Control Weight
+7. Enter your prompt
+8. Click **Generate**
+
+---
+
+# 🎯 Which ControlNet Should I Use?
+
+## 🧍 OpenPose
+
+Best for:
 
 * Human poses
 * Character positioning
-* Body structure
+* Body posture
+
+Use:
 
 ```text
 Control Type → OpenPose
 ```
 
-### Lineart
+---
 
-Use for:
+## ✏️ Canny
 
-* Drawings
-* Anime
+Best for:
+
+* Edges
+* Outlines
+* Structure preservation
+
+Use:
+
+```text
+Control Type → Canny
+```
+
+---
+
+## 🏔️ Depth
+
+Best for:
+
+* 3D structure
+* Scene depth
+* Spatial composition
+
+Use:
+
+```text
+Control Type → Depth
+```
+
+---
+
+## 🖌️ Lineart
+
+Best for:
+
 * Sketches
-* Line-based images
+* Anime
+* Drawings
+* Line-based references
+
+Use:
 
 ```text
 Control Type → Lineart
 ```
 
-### SoftEdge
+---
 
-Use for:
+## 🌊 SoftEdge
+
+Best for:
 
 * Soft outlines
-* Shape preservation
+* General shape preservation
 * Less aggressive edge control
+
+Use:
 
 ```text
 Control Type → SoftEdge
@@ -305,104 +362,13 @@ Control Type → SoftEdge
 
 ---
 
-# 📁 Important Folder Structure
+# ⚡ Fast Generation
 
-Do not move these folders unless you know exactly what you are changing.
+For faster generation, use:
 
-```text
-AI Image Generator/
-│
-├── models/
-│   ├── Stable-diffusion/
-│   │   ├── v1-5-pruned-emaonly.safetensors
-│   │   ├── realisticVisionV60B1_v51HyperVAE_418901.safetensors
-│   │   ├── juggernautXL_ragnarok_1659952.safetensors
-│   │   └── dreamshaperXL_lightningDPMSDE_282807.safetensors
-│   │
-│   ├── ControlNet/
-│   │   ├── control_v11p_sd15_canny.pth
-│   │   ├── control_v11f1p_sd15_depth.pth
-│   │   ├── control_v11p_sd15_lineart.pth
-│   │   ├── control_v11p_sd15_openpose.pth
-│   │   ├── control_v11p_sd15_softedge.pth
-│   │   ├── diffusers_xl_canny_mid.safetensors
-│   │   └── diffusers_xl_depth_mid.safetensors
-│   │
-│   └── VAE/
-│
-├── extensions/
-│   ├── sd-webui-controlnet/
-│   └── sd-civitai-browser-plus/
-│
-├── venv/
-│
-├── webui-user.bat
-├── webui.bat
-└── README.md
-```
+### DreamShaper XL Lightning
 
----
-
-# ➕ Adding Another Checkpoint
-
-Download a compatible checkpoint:
-
-[![CivitAI](https://img.shields.io/badge/Models-CivitAI-red?style=for-the-badge)](https://civitai.com/)
-
-or:
-
-[![Hugging Face](https://img.shields.io/badge/Models-Hugging%20Face-yellow?style=for-the-badge)](https://huggingface.co/models)
-
-Place the file inside:
-
-```text
-models/Stable-diffusion/
-```
-
-Supported common formats:
-
-```text
-.safetensors
-.ckpt
-```
-
-Restart or refresh the WebUI checkpoint list.
-
----
-
-# ➕ Adding ControlNet Models
-
-Place ControlNet model files inside:
-
-```text
-models/ControlNet/
-```
-
-Then:
-
-```text
-Restart WebUI
-        ↓
-Open ControlNet
-        ↓
-Select Control Type
-        ↓
-Select Preprocessor
-        ↓
-Select Model
-```
-
----
-
-# ⚡ Faster Image Generation
-
-For faster generation, especially on GPUs with limited VRAM:
-
-### SDXL Lightning
-
-Use the DreamShaper XL Lightning checkpoint.
-
-Recommended starting settings:
+Start with:
 
 ```text
 Sampling Steps: 4–8
@@ -410,60 +376,77 @@ Batch Size: 1
 Batch Count: 1
 ```
 
-For normal SDXL models, use more steps.
+Avoid unnecessarily large resolutions.
 
-Do not blindly increase resolution or batch size. Both can increase VRAM usage significantly.
+Higher resolution and larger batch sizes consume significantly more VRAM.
 
 ---
 
-# 🎨 Basic txt2img Generation
+# 🖼️ Basic Image Generation
 
-1. Select a checkpoint.
-2. Open **txt2img**.
-3. Enter your prompt.
-4. Set width and height.
-5. Select sampling method.
-6. Set sampling steps.
-7. Set CFG Scale.
-8. Click **Generate**.
-
-Example:
+Open:
 
 ```text
-Prompt:
+txt2img
+```
 
+Then:
+
+```text
+1. Select checkpoint
+2. Enter prompt
+3. Set Width / Height
+4. Select Sampling Method
+5. Set Sampling Steps
+6. Set CFG Scale
+7. Click Generate
+```
+
+Example prompt:
+
+```text
 A cinematic portrait of a futuristic warrior,
-detailed face, dramatic lighting, highly detailed,
-professional photography
+dramatic lighting, detailed face,
+professional photography, highly detailed
 ```
 
 ---
 
-# 🖼️ img2img
+# 🔄 Image-to-Image
 
-Use **img2img** when you already have an image and want to transform or modify it.
-
-Basic workflow:
+Use:
 
 ```text
-Upload image
+img2img
+```
+
+Workflow:
+
+```text
+Upload Image
       ↓
-Write prompt
+Enter Prompt
       ↓
 Set Denoising Strength
-      ↓
-Choose resolution
       ↓
 Generate
 ```
 
-Higher denoising strength creates larger changes.
+Lower denoising strength:
 
-Lower denoising strength preserves more of the original image.
+```text
+More similarity to original image
+```
+
+Higher denoising strength:
+
+```text
+More transformation
+```
 
 ---
 
-# 🛠️ CivitAI Browser+
+# 📦 CivitAI Browser+
 
 The project includes:
 
@@ -471,41 +454,48 @@ The project includes:
 extensions/sd-civitai-browser-plus/
 ```
 
-It allows you to browse and download models from CivitAI directly through the WebUI.
+CivitAI:
 
-Open:
+[![Open CivitAI](https://img.shields.io/badge/Open-CivitAI-red?style=for-the-badge)](https://civitai.com/)
 
-```text
-CivitAI Browser+
-```
-
-Use it to find:
+Use CivitAI Browser+ to discover and download additional:
 
 * Checkpoints
 * LoRAs
 * Embeddings
 * Other compatible models
 
-Always check whether a downloaded model is intended for **SD 1.5, SDXL, or another architecture** before using it.
+Always check the model architecture before downloading.
+
+For example:
+
+```text
+SD 1.5 model → SD 1.5 workflow
+SDXL model   → SDXL workflow
+```
 
 ---
 
-# 🔄 Refreshing Models
+# 🧰 ControlNet Extension
 
-After adding a model manually:
-
-1. Open the checkpoint selector.
-2. Click the refresh button.
-3. Select the new model.
-
-If the model does not appear:
+The project includes:
 
 ```text
-Check the file location
-        ↓
-Check the file extension
-        ↓
+extensions/sd-webui-controlnet/
+```
+
+The extension provides the ControlNet interface and preprocessors.
+
+If ControlNet does not appear:
+
+```text
 Restart WebUI
+```
+
+Then check:
+
+```text
+Extensions
 ```
 
 ---
@@ -530,45 +520,43 @@ Expected:
 Python 3.10.6
 ```
 
-### PyTorch
+### PyTorch + CUDA
 
 ```powershell
-.\venv\Scripts\python.exe -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
+.\venv\Scripts\python.exe -c "import torch; print('Torch:', torch.__version__); print('CUDA:', torch.cuda.is_available()); print('GPU:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'Not detected')"
 ```
 
-Expected CUDA availability:
+CUDA should report:
 
 ```text
-True
+CUDA: True
 ```
 
 ### MediaPipe
 
 ```powershell
-.\venv\Scripts\python.exe -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions'))"
+.\venv\Scripts\python.exe -c "import mediapipe as mp; print('MediaPipe:', mp.__version__); print('Solutions:', hasattr(mp,'solutions'))"
 ```
 
 ### OpenCV
 
 ```powershell
-.\venv\Scripts\python.exe -c "import cv2; print(cv2.__version__)"
+.\venv\Scripts\python.exe -c "import cv2; print('OpenCV:', cv2.__version__)"
 ```
 
 ### NumPy
 
 ```powershell
-.\venv\Scripts\python.exe -c "import numpy; print(numpy.__version__)"
+.\venv\Scripts\python.exe -c "import numpy; print('NumPy:', numpy.__version__)"
 ```
 
 ---
 
-# ❗ Important
+# ⚠️ Do Not Randomly Upgrade Packages
 
-Do **not** randomly upgrade packages inside the existing environment.
+This setup depends on a compatible Python environment.
 
-This project uses a specific working environment.
-
-Changing packages such as:
+Avoid randomly upgrading:
 
 ```text
 Python
@@ -579,51 +567,82 @@ OpenCV
 MediaPipe
 ```
 
-can break compatibility.
+If the current installation works, **leave the environment unchanged**.
 
-If everything is working, leave the environment alone.
+---
+
+# 🗂️ Project Structure
+
+```text
+AI-Image-Generator/
+│
+├── models/
+│   ├── Stable-diffusion/
+│   ├── ControlNet/
+│   └── VAE/
+│
+├── extensions/
+│   ├── sd-webui-controlnet/
+│   └── sd-civitai-browser-plus/
+│
+├── modules/
+├── scripts/
+├── configs/
+│
+├── webui-user.bat
+├── webui.bat
+├── config.json
+├── ui-config.json
+└── README.md
+```
+
+> The GitHub repository intentionally does **not** contain the large model files, Python virtual environment, or downloaded dependency repositories. These are excluded from Git to keep the repository manageable.
 
 ---
 
 # 🧯 Troubleshooting
 
-## WebUI does not start
+## Python version is wrong
 
-Run:
+Check:
 
 ```powershell
-.\webui-user.bat
+.\venv\Scripts\python.exe --version
 ```
 
-Read the terminal error instead of repeatedly reinstalling packages.
+Required:
+
+```text
+Python 3.10.6
+```
 
 ---
 
-## Checkpoint does not appear
+## Model is not showing
 
-Make sure the checkpoint is inside:
+Check that the model is inside:
 
 ```text
 models/Stable-diffusion/
 ```
 
-Then restart the WebUI.
+Then restart WebUI.
 
 ---
 
-## ControlNet model does not appear
+## ControlNet model is not showing
 
-Make sure the model is inside:
+Check:
 
 ```text
 models/ControlNet/
 ```
 
-Then restart the WebUI.
+Then restart WebUI.
 
 ---
 
-## CUDA is unavailable
+## CUDA is not detected
 
 Run:
 
@@ -634,98 +653,33 @@ nvidia-smi
 Then:
 
 ```powershell
-.\venv\Scripts\python.exe -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CUDA unavailable')"
+.\venv\Scripts\python.exe -c "import torch; print(torch.cuda.is_available())"
+```
+
+If it returns:
+
+```text
+False
+```
+
+your GPU/PyTorch environment needs troubleshooting.
+
+---
+
+# 📌 Current Environment
+
+```text
+AI Image Generator
+WebUI: v1.10.1
+Python: 3.10.6
+PyTorch: 2.1.2+cu121
+Gradio: 3.41.2
+ControlNet: v1.1.455
 ```
 
 ---
 
-# 📦 Project Information
-
-WebUI version:
-
-```text
-v1.10.1
-```
-
-Python:
-
-```text
-3.10.6
-```
-
-PyTorch:
-
-```text
-2.1.2+cu121
-```
-
-Gradio:
-
-```text
-3.41.2
-```
-
-ControlNet:
-
-```text
-v1.1.455
-```
-
----
-
-# ⭐ Recommended Workflow
-
-For a simple workflow:
-
-```text
-Select Checkpoint
-        ↓
-Write Prompt
-        ↓
-Set Resolution
-        ↓
-Set Sampling Steps
-        ↓
-Generate
-        ↓
-Use ControlNet if needed
-        ↓
-Upscale / Improve
-        ↓
-Save Image
-```
-
-For pose-controlled generation:
-
-```text
-Reference Image
-        ↓
-ControlNet
-        ↓
-OpenPose
-        ↓
-Prompt
-        ↓
-Generate
-```
-
-For structure-controlled generation:
-
-```text
-Reference Image
-        ↓
-ControlNet
-        ↓
-Canny / Depth / Lineart
-        ↓
-Prompt
-        ↓
-Generate
-```
-
----
-
-## 🎨 Start Creating
+# 🎨 Start Generating
 
 Run:
 
@@ -733,4 +687,12 @@ Run:
 .\webui-user.bat
 ```
 
-Then open the local WebUI and start generating images.
+Open the local WebUI shown in the terminal.
+
+Select a model, write your prompt, configure your settings, and click:
+
+```text
+Generate
+```
+
+**Enjoy creating. 🎨**
