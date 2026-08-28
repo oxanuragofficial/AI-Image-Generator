@@ -3,308 +3,1309 @@ A web interface for Stable Diffusion, implemented using Gradio library.
 
 ![](screenshot.png)
 
-<div align="center">
+# Stable Diffusion WebUI — Complete Windows Setup
 
-<!-- ==================== HERO HEADER ==================== -->
+> A ready-to-use **AUTOMATIC1111 Stable Diffusion WebUI v1.10.1** setup for Windows with **ControlNet**, **CivitAI Browser+**, SD 1.5 models and SDXL models.
 
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,35:061B2E,70:003B5C,100:00BFFF&height=220&section=header&text=ANURAG%20KUMAR&fontSize=58&fontColor=FFFFFF&fontAlignY=36&animation=fadeIn&desc=FRONTEND%20DEVELOPER%20%7C%20ASPIRING%20FULL-STACK%20ENGINEER&descSize=17&descAlignY=58&descColor=67E8F9"
-  width="100%"
-  alt="Anurag Kumar - Frontend Developer"
-/>
-
-<!-- Tech identity -->
-
-<img
-  src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=1000&color=00BFFF&center=true&vCenter=true&width=650&lines=BUILDING+FOR+THE+WEB+%7C+LEARNING+EVERY+DAY;FULL-STACK+DEVELOPMENT+%7C+JAVA+%7C+DSA;TURNING+IDEAS+INTO+REAL+PROJECTS"
-  alt="Typing animation"
-/>
-
-<br/>
-
-<!-- Primary Actions -->
-
-<a href="https://anurag-portfolio-webdev.netlify.app/" target="_blank">
-  <img src="https://img.shields.io/badge/🌐%20PORTFOLIO-00BFFF?style=for-the-badge&labelColor=020617" alt="Portfolio"/>
-</a>
-&nbsp;
-<a href="mailto:hindvansianurag@gmail.com">
-  <img src="https://img.shields.io/badge/📧%20CONTACT-00BFFF?style=for-the-badge&labelColor=020617" alt="Contact"/>
-</a>
-
-<br/><br/>
-
-<img
-  src="https://komarev.com/ghpvc/?username=oxanuragofficial&style=flat-square&color=00BFFF&label=PROFILE+VIEWS"
-  alt="Profile views"
-/>
-
-</div>
+[![Python](https://img.shields.io/badge/Python-3.10.6-blue?style=for-the-badge\&logo=python)](https://www.python.org/downloads/release/python-3106/)
+[![WebUI](https://img.shields.io/badge/AUTOMATIC1111-v1.10.1-black?style=for-the-badge)](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.2%20%2B%20CUDA%2012.1-ee4c2c?style=for-the-badge\&logo=pytorch)](https://pytorch.org/)
+[![ControlNet](https://img.shields.io/badge/ControlNet-v1.1.455-blue?style=for-the-badge)](https://github.com/Mikubill/sd-webui-controlnet)
 
 ---
 
-<div align="center">
+# 📌 What This Repository Contains
 
-## 👋 About Me
+This repository contains the WebUI setup and extensions.
 
-**Frontend Developer** focused on building clean, responsive, and user-friendly web experiences.
+### Included
 
-🌱 Learning **Full-Stack Development, Java & DSA**
+* AUTOMATIC1111 WebUI `v1.10.1`
+* ControlNet `v1.1.455`
+* CivitAI Browser+
+* WebUI configuration
+* ControlNet extension files
+* CivitAI Browser+ extension files
+* Required project source files
 
-🏢 Building **Bharat Webstudio**
+### NOT included
 
-💡 Interested in **Web Development & Software Engineering**
+Large files are intentionally excluded from GitHub:
 
-🎯 Goal: Become a **Full-Stack Engineer**
+* `venv/`
+* `models/`
+* `repositories/`
+* `config_states/`
 
-> **Build with purpose. Learn continuously. Keep improving.**
-
-</div>
-
----
-
-<div align="center">
-
-## 🛠️ Tech Stack
-
-<img src="https://skillicons.dev/icons?i=c,cpp,python,javascript,html,css,git,github,vscode,vercel" />
-
-</div>
+You download the models separately and place them into the correct folders.
 
 ---
 
-<div align="center">
+# ⚠️ IMPORTANT — Python Version
 
-## 🚀 Featured Work
+## Python 3.10.6 is REQUIRED
 
-### 🏢 Bharat Webstudio
+This setup was built and tested with:
 
-Modern websites and digital experiences for businesses.
-
-<br/>
-
-<a href="https://oxanuragofficial.github.io/bharat-webstudio-official/" target="_blank">
-<img src="https://img.shields.io/badge/VIEW%20PROJECT-00BFFF?style=for-the-badge&labelColor=050505" alt="View Project"/>
-</a>
-
-<a href="https://anurag-portfolio-webdev.netlify.app/" target="_blank">
-<img src="https://img.shields.io/badge/MY%20PORTFOLIO-00BFFF?style=for-the-badge&labelColor=050505" alt="My Portfolio"/>
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-## 🔥 GitHub Contribution Streak
-
-<img src="https://github-readme-streak-stats-eight.vercel.app/?user=oxanuragofficial&theme=dark&background=000000&border=00BFFF&stroke=00BFFF&ring=00BFFF&fire=00BFFF&currStreakNum=00BFFF&sideNums=00BFFF&currStreakLabel=00BFFF&sideLabels=00BFFF&dates=FFFFFF&hide_border=false" alt="GitHub Contribution Streak"/>
-
-</div>
-
----
-
-<div align="center">
-
-## 🏆 Coding Profiles
-
-<a href="https://leetcode.com/oxanuragofficial" target="_blank">
-<img src="https://img.shields.io/badge/LeetCode-000000?style=for-the-badge&logo=leetcode&logoColor=00BFFF" alt="LeetCode"/>
-</a>
-
-<a href="https://www.codechef.com/users/oxanura" target="_blank">
-<img src="https://img.shields.io/badge/CodeChef-000000?style=for-the-badge&logo=codechef&logoColor=00BFFF" alt="CodeChef"/>
-</a>
-
-<a href="https://codeforces.com/profile/oxanuragofficial" target="_blank">
-<img src="https://img.shields.io/badge/Codeforces-000000?style=for-the-badge&logo=codeforces&logoColor=00BFFF" alt="Codeforces"/>
-</a>
-
-<a href="https://www.hackerrank.com/profile/hindvansianurag" target="_blank">
-<img src="https://img.shields.io/badge/HackerRank-000000?style=for-the-badge&logo=hackerrank&logoColor=00BFFF" alt="HackerRank"/>
-</a>
-
-</div>
-
----
-
-<div align="center">
-
-## 🐍 Contribution Snake
-
-<img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake"/>
-
-> 🟢 The more I code, the longer the snake grows! 🚀
-
-</div>
-
----
-
-<div align="center">
-
-## 🤝 Let's Connect
-
-<a href="https://linkedin.com/in/oxanuragofficial" target="_blank">
-<img src="https://img.shields.io/badge/LinkedIn-00BFFF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=050505" alt="LinkedIn"/>
-</a>
-
-<a href="https://instagram.com/oxanuragofficial" target="_blank">
-<img src="https://img.shields.io/badge/Instagram-00BFFF?style=for-the-badge&logo=instagram&logoColor=white&labelColor=050505" alt="Instagram"/>
-</a>
-
-<a href="mailto:hindvansianurag@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-00BFFF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=050505" alt="Gmail"/>
-</a>
-
-### 💙 Learn. Build. Improve. 🚀
-
-<br/>
-
-<!-- ==================== FOOTER ==================== -->
-
-<img
-  src="https://capsule-render.vercel.app/api?type=waving&color=0:00BFFF,35:006B8F,70:061B2E,100:020617&height=170&section=footer&animation=fadeIn"
-  width="100%"
-  alt="Footer"
-/>
-
-</div>once
-     - separate prompts using uppercase `AND`
-     - also supports weights for prompts: `a cat :1.2 AND a dog AND a penguin :2.2`
-- No token limit for prompts (original stable diffusion lets you use up to 75 tokens)
-- DeepDanbooru integration, creates danbooru style tags for anime prompts
-- [xformers](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Xformers), major speed increase for select cards: (add `--xformers` to commandline args)
-- via extension: [History tab](https://github.com/yfszzx/stable-diffusion-webui-images-browser): view, direct and delete images conveniently within the UI
-- Generate forever option
-- Training tab
-     - hypernetworks and embeddings options
-     - Preprocessing images: cropping, mirroring, autotagging using BLIP or deepdanbooru (for anime)
-- Clip skip
-- Hypernetworks
-- Loras (same as Hypernetworks but more pretty)
-- A separate UI where you can choose, with preview, which embeddings, hypernetworks or Loras to add to your prompt
-- Can select to load a different VAE from settings screen
-- Estimated completion time in progress bar
-- API
-- Support for dedicated [inpainting model](https://github.com/runwayml/stable-diffusion#inpainting-with-stable-diffusion) by RunwayML
-- via extension: [Aesthetic Gradients](https://github.com/AUTOMATIC1111/stable-diffusion-webui-aesthetic-gradients), a way to generate images with a specific aesthetic by using clip images embeds (implementation of [https://github.com/vicgalle/stable-diffusion-aesthetic-gradients](https://github.com/vicgalle/stable-diffusion-aesthetic-gradients))
-- [Stable Diffusion 2.0](https://github.com/Stability-AI/stablediffusion) support - see [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#stable-diffusion-20) for instructions
-- [Alt-Diffusion](https://arxiv.org/abs/2211.06679) support - see [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#alt-diffusion) for instructions
-- Now without any bad letters!
-- Load checkpoints in safetensors format
-- Eased resolution restriction: generated image's dimensions must be a multiple of 8 rather than 64
-- Now with a license!
-- Reorder elements in the UI from settings screen
-- [Segmind Stable Diffusion](https://huggingface.co/segmind/SSD-1B) support
-
-## Installation and Running
-Make sure the required [dependencies](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Dependencies) are met and follow the instructions available for:
-- [NVidia](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs) (recommended)
-- [AMD](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-AMD-GPUs) GPUs.
-- [Intel CPUs, Intel GPUs (both integrated and discrete)](https://github.com/openvinotoolkit/stable-diffusion-webui/wiki/Installation-on-Intel-Silicon) (external wiki page)
-- [Ascend NPUs](https://github.com/wangshuai09/stable-diffusion-webui/wiki/Install-and-run-on-Ascend-NPUs) (external wiki page)
-
-Alternatively, use online services (like Google Colab):
-
-- [List of Online Services](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Online-Services)
-
-### Installation on Windows 10/11 with NVidia-GPUs using release package
-1. Download `sd.webui.zip` from [v1.0.0-pre](https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre) and extract its contents.
-2. Run `update.bat`.
-3. Run `run.bat`.
-> For more details see [Install-and-Run-on-NVidia-GPUs](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Install-and-Run-on-NVidia-GPUs)
-
-### Automatic Installation on Windows
-1. Install [Python 3.10.6](https://www.python.org/downloads/release/python-3106/) (Newer version of Python does not support torch), checking "Add Python to PATH".
-2. Install [git](https://git-scm.com/download/win).
-3. Download the stable-diffusion-webui repository, for example by running `git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git`.
-4. Run `webui-user.bat` from Windows Explorer as normal, non-administrator, user.
-
-### Automatic Installation on Linux
-1. Install the dependencies:
-```bash
-# Debian-based:
-sudo apt install wget git python3 python3-venv libgl1 libglib2.0-0
-# Red Hat-based:
-sudo dnf install wget git python3 gperftools-libs libglvnd-glx
-# openSUSE-based:
-sudo zypper install wget git python3 libtcmalloc4 libglvnd
-# Arch-based:
-sudo pacman -S wget git python3
-```
-If your system is very new, you need to install python3.11 or python3.10:
-```bash
-# Ubuntu 24.04
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.11
-
-# Manjaro/Arch
-sudo pacman -S yay
-yay -S python311 # do not confuse with python3.11 package
-
-# Only for 3.11
-# Then set up env variable in launch script
-export python_cmd="python3.11"
-# or in webui-user.sh
-python_cmd="python3.11"
-```
-2. Navigate to the directory you would like the webui to be installed and execute the following command:
-```bash
-wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh
-```
-Or just clone the repo wherever you want:
-```bash
-git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+```text
+Python 3.10.6
 ```
 
-3. Run `webui.sh`.
-4. Check `webui-user.sh` for options.
-### Installation on Apple Silicon
+**Do not use Python 3.11, 3.12, 3.13 or 3.14 for this setup.**
 
-Find the instructions [here](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Installation-on-Apple-Silicon).
+### Download Python 3.10.6
 
-## Contributing
-Here's how to add code to this repo: [Contributing](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Contributing)
+[![DOWNLOAD PYTHON 3.10.6](https://img.shields.io/badge/⬇%20DOWNLOAD-PYTHON%203.10.6-blue?style=for-the-badge)](https://www.python.org/downloads/release/python-3106/)
 
-## Documentation
+During installation:
 
-The documentation was moved from this README over to the project's [wiki](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki).
+```text
+☑ Add Python 3.10 to PATH
+```
 
-For the purposes of getting Google and other search engines to crawl the wiki, here's a link to the (not for humans) [crawlable wiki](https://github-wiki-see.page/m/AUTOMATIC1111/stable-diffusion-webui/wiki).
+### Verify
 
-## Credits
-Licenses for borrowed code can be found in `Settings -> Licenses` screen, and also in `html/licenses.html` file.
+Open PowerShell:
 
-- Stable Diffusion - https://github.com/Stability-AI/stablediffusion, https://github.com/CompVis/taming-transformers, https://github.com/mcmonkey4eva/sd3-ref
-- k-diffusion - https://github.com/crowsonkb/k-diffusion.git
-- Spandrel - https://github.com/chaiNNer-org/spandrel implementing
-  - GFPGAN - https://github.com/TencentARC/GFPGAN.git
-  - CodeFormer - https://github.com/sczhou/CodeFormer
-  - ESRGAN - https://github.com/xinntao/ESRGAN
-  - SwinIR - https://github.com/JingyunLiang/SwinIR
-  - Swin2SR - https://github.com/mv-lab/swin2sr
-- LDSR - https://github.com/Hafiidz/latent-diffusion
-- MiDaS - https://github.com/isl-org/MiDaS
-- Ideas for optimizations - https://github.com/basujindal/stable-diffusion
-- Cross Attention layer optimization - Doggettx - https://github.com/Doggettx/stable-diffusion, original idea for prompt editing.
-- Cross Attention layer optimization - InvokeAI, lstein - https://github.com/invoke-ai/InvokeAI (originally http://github.com/lstein/stable-diffusion)
-- Sub-quadratic Cross Attention layer optimization - Alex Birch (https://github.com/Birch-san/diffusers/pull/1), Amin Rezaei (https://github.com/AminRezaei0x443/memory-efficient-attention)
-- Textual Inversion - Rinon Gal - https://github.com/rinongal/textual_inversion (we're not using his code, but we are using his ideas).
-- Idea for SD upscale - https://github.com/jquesnelle/txt2imghd
-- Noise generation for outpainting mk2 - https://github.com/parlance-zz/g-diffuser-bot
-- CLIP interrogator idea and borrowing some code - https://github.com/pharmapsychotic/clip-interrogator
-- Idea for Composable Diffusion - https://github.com/energy-based-model/Compositional-Visual-Generation-with-Composable-Diffusion-Models-PyTorch
-- xformers - https://github.com/facebookresearch/xformers
-- DeepDanbooru - interrogator for anime diffusers https://github.com/KichangKim/DeepDanbooru
-- Sampling in float32 precision from a float16 UNet - marunine for the idea, Birch-san for the example Diffusers implementation (https://github.com/Birch-san/diffusers-play/tree/92feee6)
-- Instruct pix2pix - Tim Brooks (star), Aleksander Holynski (star), Alexei A. Efros (no star) - https://github.com/timothybrooks/instruct-pix2pix
-- Security advice - RyotaK
-- UniPC sampler - Wenliang Zhao - https://github.com/wl-zhao/UniPC
-- TAESD - Ollin Boer Bohan - https://github.com/madebyollin/taesd
-- LyCORIS - KohakuBlueleaf
-- Restart sampling - lambertae - https://github.com/Newbeeer/diffusion_restart_sampling
-- Hypertile - tfernd - https://github.com/tfernd/HyperTile
-- Initial Gradio script - posted on 4chan by an Anonymous user. Thank you Anonymous user.
-- (You)
+```powershell
+python --version
+```
+
+It must return:
+
+```text
+Python 3.10.6
+```
+
+Also check:
+
+```powershell
+py -3.10 --version
+```
+
+Expected:
+
+```text
+Python 3.10.6
+```
+
+If you get another version, **do not continue until Python 3.10.6 is available.**
+
+---
+
+# 1️⃣ Install Git
+
+Git is required to download this repository.
+
+[![DOWNLOAD GIT](https://img.shields.io/badge/⬇%20DOWNLOAD-GIT-orange?style=for-the-badge\&logo=git)](https://git-scm.com/download/win)
+
+Verify:
+
+```powershell
+git --version
+```
+
+---
+
+# 2️⃣ Clone This Repository
+
+Open PowerShell:
+
+```powershell
+cd C:\
+```
+
+Clone:
+
+```powershell
+git clone https://github.com/oxanuragofficial/stable-diffusion-webui-setup.git
+```
+
+Enter the directory:
+
+```powershell
+cd C:\stable-diffusion-webui-setup
+```
+
+Your installation directory can be different.
+
+Example:
+
+```text
+D:\AI\stable-diffusion-webui-setup
+```
+
+---
+
+# 3️⃣ NVIDIA GPU Check
+
+For NVIDIA GPUs, verify that Windows can see your GPU:
+
+```powershell
+nvidia-smi
+```
+
+You should see your NVIDIA GPU, driver and VRAM information.
+
+This setup was tested with:
+
+```text
+PyTorch: 2.1.2+cu121
+CUDA build: 12.1
+```
+
+---
+
+# 4️⃣ Start WebUI
+
+From the repository directory:
+
+```powershell
+.\webui-user.bat
+```
+
+The first launch may take some time because WebUI creates the Python environment and installs dependencies.
+
+When startup completes, you should see something similar to:
+
+```text
+Running on local URL: http://127.0.0.1:7860
+```
+
+Open that address in your browser.
+
+---
+
+# 5️⃣ Model Folder Structure
+
+You will use these folders:
+
+```text
+stable-diffusion-webui-setup/
+│
+├── models/
+│   │
+│   ├── Stable-diffusion/
+│   │
+│   ├── ControlNet/
+│   │
+│   └── VAE/
+│
+├── extensions/
+│   │
+│   ├── sd-webui-controlnet/
+│   │
+│   └── sd-civitai-browser-plus/
+│
+└── webui-user.bat
+```
+
+If a folder does not exist, create it manually.
+
+---
+
+# 6️⃣ Stable Diffusion Checkpoints
+
+## Where do checkpoints go?
+
+All `.safetensors` checkpoints go here:
+
+```text
+models\Stable-diffusion\
+```
+
+Example:
+
+```text
+models/
+└── Stable-diffusion/
+    ├── v1-5-pruned-emaonly.safetensors
+    ├── realisticVisionV60B1_v51HyperVAE_418901.safetensors
+    ├── dreamshaperXL_lightningDPMSDE_282807.safetensors
+    └── juggernautXL_ragnarok_1659952.safetensors
+```
+
+---
+
+# 7️⃣ SD 1.5 — Base Model
+
+## `v1-5-pruned-emaonly.safetensors`
+
+This is the SD 1.5 base checkpoint.
+
+### Download
+
+[![DOWNLOAD SD 1.5](https://img.shields.io/badge/⬇%20DOWNLOAD-SD%201.5-blue?style=for-the-badge)](https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/blob/main/v1-5-pruned-emaonly.safetensors)
+
+The official model page lists the `v1-5-pruned-emaonly.safetensors` file.
+
+### Put it here
+
+```text
+models\Stable-diffusion\v1-5-pruned-emaonly.safetensors
+```
+
+---
+
+# 8️⃣ Realistic Vision V6
+
+## `realisticVisionV60B1_v51HyperVAE_418901.safetensors`
+
+This is an SD 1.5-family realistic checkpoint.
+
+### Download
+
+[![DOWNLOAD REALISTIC VISION](https://img.shields.io/badge/⬇%20DOWNLOAD-REALISTIC%20VISION-purple?style=for-the-badge)](https://civitai.com/)
+
+Search for:
+
+```text
+Realistic Vision V6.0 B1
+```
+
+### Put it here
+
+```text
+models\Stable-diffusion\realisticVisionV60B1_v51HyperVAE_418901.safetensors
+```
+
+> **Note:** CivitAI model pages and file IDs can change. Use the model's official CivitAI page rather than downloading an unknown mirror.
+
+---
+
+# 9️⃣ DreamShaper XL Lightning
+
+## `dreamshaperXL_lightningDPMSDE_282807.safetensors`
+
+This is an **SDXL** checkpoint.
+
+### Download
+
+[![DOWNLOAD DREAMSHAPER XL](https://img.shields.io/badge/⬇%20DOWNLOAD-DREAMSHAPER%20XL-purple?style=for-the-badge)](https://civitai.com/)
+
+Search:
+
+```text
+DreamShaper XL Lightning
+```
+
+### Put it here
+
+```text
+models\Stable-diffusion\dreamshaperXL_lightningDPMSDE_282807.safetensors
+```
+
+---
+
+# 🔟 Juggernaut XL Ragnarok
+
+## `juggernautXL_ragnarok_1659952.safetensors`
+
+This is an **SDXL** checkpoint.
+
+### Download
+
+[![DOWNLOAD JUGGERNAUT XL](https://img.shields.io/badge/⬇%20DOWNLOAD-JUGGERNAUT%20XL-purple?style=for-the-badge)](https://civitai.com/)
+
+Search:
+
+```text
+Juggernaut XL Ragnarok
+```
+
+### Put it here
+
+```text
+models\Stable-diffusion\juggernautXL_ragnarok_1659952.safetensors
+```
+
+---
+
+# 1️⃣1️⃣ ControlNet
+
+ControlNet is already included in this repository.
+
+Location:
+
+```text
+extensions\sd-webui-controlnet\
+```
+
+Your setup uses:
+
+```text
+ControlNet v1.1.455
+```
+
+The official ControlNet v1.1 model family includes dedicated models for Canny, Depth, OpenPose, SoftEdge, Lineart and other conditioning types.
+
+---
+
+# 1️⃣2️⃣ ControlNet Model Folder
+
+Create:
+
+```text
+models\ControlNet\
+```
+
+Your SD 1.5 ControlNet models go there.
+
+Final structure:
+
+```text
+models/
+└── ControlNet/
+    │
+    ├── control_v11p_sd15_canny.pth
+    ├── control_v11f1p_sd15_depth.pth
+    ├── control_v11p_sd15_lineart.pth
+    ├── control_v11p_sd15_openpose.pth
+    └── control_v11p_sd15_softedge.pth
+```
+
+---
+
+# 1️⃣3️⃣ ControlNet — Canny
+
+### File
+
+```text
+control_v11p_sd15_canny.pth
+```
+
+### Download
+
+[![DOWNLOAD CANNY](https://img.shields.io/badge/⬇%20DOWNLOAD-CANNY-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/control_v11p_sd15_canny)
+
+### Put here
+
+```text
+models\ControlNet\control_v11p_sd15_canny.pth
+```
+
+### Use for
+
+* Strong edges
+* Object outlines
+* Composition
+* Shape preservation
+
+---
+
+# 1️⃣4️⃣ ControlNet — Depth
+
+### File
+
+```text
+control_v11f1p_sd15_depth.pth
+```
+
+### Download
+
+[![DOWNLOAD DEPTH](https://img.shields.io/badge/⬇%20DOWNLOAD-DEPTH-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/control_v11f1p_sd15_depth)
+
+### Put here
+
+```text
+models\ControlNet\control_v11f1p_sd15_depth.pth
+```
+
+### Use for
+
+* 3D structure
+* Foreground/background separation
+* Maintaining spatial composition
+* Controlling scene depth
+
+The official model description identifies the depth model as the SD1.5 ControlNet trained using depth estimation.
+
+---
+
+# 1️⃣5️⃣ ControlNet — OpenPose
+
+### File
+
+```text
+control_v11p_sd15_openpose.pth
+```
+
+### Download
+
+[![DOWNLOAD OPENPOSE](https://img.shields.io/badge/⬇%20DOWNLOAD-OPENPOSE-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/control_v11p_sd15_openpose)
+
+### Put here
+
+```text
+models\ControlNet\control_v11p_sd15_openpose.pth
+```
+
+### Use for
+
+* Human pose
+* Body position
+* Character positioning
+* Dance/action poses
+
+The official model is specifically trained for OpenPose conditioning.
+
+---
+
+# 1️⃣6️⃣ ControlNet — Lineart
+
+### File
+
+```text
+control_v11p_sd15_lineart.pth
+```
+
+### Download
+
+[![DOWNLOAD LINEART](https://img.shields.io/badge/⬇%20DOWNLOAD-LINEART-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/control_v11p_sd15_lineart)
+
+### Put here
+
+```text
+models\ControlNet\control_v11p_sd15_lineart.pth
+```
+
+### Use for
+
+* Drawings
+* Sketches
+* Illustration structure
+* Clean outlines
+
+---
+
+# 1️⃣7️⃣ ControlNet — SoftEdge
+
+### File
+
+```text
+control_v11p_sd15_softedge.pth
+```
+
+### Download
+
+[![DOWNLOAD SOFTEDGE](https://img.shields.io/badge/⬇%20DOWNLOAD-SOFTEDGE-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/control_v11p_sd15_softedge)
+
+### Put here
+
+```text
+models\ControlNet\control_v11p_sd15_softedge.pth
+```
+
+### Use for
+
+* Soft outlines
+* Structure preservation
+* Artistic edges
+* Less rigid composition control
+
+---
+
+# 1️⃣8️⃣ SDXL ControlNet Models
+
+Your setup also contains:
+
+```text
+diffusers_xl_canny_mid.safetensors
+diffusers_xl_depth_mid.safetensors
+```
+
+These are **SDXL ControlNet models**, not SD1.5 ControlNet models.
+
+The official SDXL ControlNet collection includes separate Canny and Depth models in small, mid and full variants.
+
+### Canny SDXL
+
+[![DOWNLOAD SDXL CANNY](https://img.shields.io/badge/⬇%20DOWNLOAD-SDXL%20CANNY-blue?style=for-the-badge)](https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0-mid)
+
+### Depth SDXL
+
+[![DOWNLOAD SDXL DEPTH](https://img.shields.io/badge/⬇%20DOWNLOAD-SDXL%20DEPTH-blue?style=for-the-badge)](https://huggingface.co/diffusers/controlnet-depth-sdxl-1.0-mid)
+
+Put them here:
+
+```text
+models\ControlNet\
+```
+
+Result:
+
+```text
+models/
+└── ControlNet/
+    ├── control_v11p_sd15_canny.pth
+    ├── control_v11f1p_sd15_depth.pth
+    ├── control_v11p_sd15_lineart.pth
+    ├── control_v11p_sd15_openpose.pth
+    ├── control_v11p_sd15_softedge.pth
+    ├── diffusers_xl_canny_mid.safetensors
+    └── diffusers_xl_depth_mid.safetensors
+```
+
+---
+
+# 1️⃣9️⃣ ControlNet Configuration
+
+Start WebUI:
+
+```powershell
+.\webui-user.bat
+```
+
+Open:
+
+```text
+txt2img
+```
+
+Scroll down until you see:
+
+```text
+ControlNet
+```
+
+You should see:
+
+```text
+ControlNet Unit 0
+ControlNet Unit 1
+ControlNet Unit 2
+```
+
+---
+
+## Step 1 — Enable ControlNet
+
+Open:
+
+```text
+ControlNet Unit 0
+```
+
+Enable:
+
+```text
+☑ Enable
+```
+
+Optional:
+
+```text
+☑ Pixel Perfect
+```
+
+---
+
+## Step 2 — Upload Image
+
+Under:
+
+```text
+Single Image
+```
+
+upload your source image.
+
+Example:
+
+```text
+photo.jpg
+```
+
+---
+
+## Step 3 — Select Control Type
+
+Choose the control type matching your model.
+
+### Canny
+
+```text
+Control Type → Canny
+```
+
+### Depth
+
+```text
+Control Type → Depth
+```
+
+### OpenPose
+
+```text
+Control Type → OpenPose
+```
+
+### Lineart
+
+```text
+Control Type → Lineart
+```
+
+### SoftEdge
+
+```text
+Control Type → SoftEdge
+```
+
+---
+
+# 2️⃣0️⃣ ControlNet Preprocessor
+
+After selecting the Control Type, WebUI should provide the appropriate preprocessor.
+
+Example:
+
+```text
+Control Type:
+Canny
+
+Preprocessor:
+canny
+
+Model:
+control_v11p_sd15_canny
+```
+
+For Depth:
+
+```text
+Control Type:
+Depth
+
+Preprocessor:
+depth
+
+Model:
+control_v11f1p_sd15_depth
+```
+
+For OpenPose:
+
+```text
+Control Type:
+OpenPose
+
+Preprocessor:
+openpose
+
+Model:
+control_v11p_sd15_openpose
+```
+
+---
+
+# 2️⃣1️⃣ Control Weight
+
+Start with:
+
+```text
+Control Weight: 1.0
+```
+
+If ControlNet is too strong:
+
+```text
+0.5 – 0.8
+```
+
+If the generated image does not follow the control image enough:
+
+```text
+1.0 – 1.5
+```
+
+Do not immediately push the value extremely high.
+
+---
+
+# 2️⃣2️⃣ Starting / Ending Control Step
+
+Recommended starting values:
+
+```text
+Starting Control Step: 0
+Ending Control Step: 1
+```
+
+This means ControlNet influences the complete generation process.
+
+Later you can experiment with:
+
+```text
+Starting: 0.0
+Ending: 0.7
+```
+
+or:
+
+```text
+Starting: 0.2
+Ending: 0.8
+```
+
+---
+
+# 2️⃣3️⃣ Control Mode
+
+You will see:
+
+```text
+Balanced
+My prompt is more important
+ControlNet is more important
+```
+
+### Recommended
+
+Start with:
+
+```text
+Balanced
+```
+
+Use:
+
+```text
+My prompt is more important
+```
+
+when the prompt should have more freedom.
+
+Use:
+
+```text
+ControlNet is more important
+```
+
+when preserving the source structure is the priority.
+
+---
+
+# 2️⃣4️⃣ SD 1.5 vs SDXL — IMPORTANT
+
+Do not mix these models incorrectly.
+
+### SD 1.5
+
+Use:
+
+```text
+v1-5-pruned-emaonly.safetensors
+```
+
+with:
+
+```text
+control_v11p_sd15_canny.pth
+control_v11f1p_sd15_depth.pth
+control_v11p_sd15_lineart.pth
+control_v11p_sd15_openpose.pth
+control_v11p_sd15_softedge.pth
+```
+
+### SDXL
+
+Use:
+
+```text
+dreamshaperXL_lightningDPMSDE_282807.safetensors
+```
+
+or:
+
+```text
+juggernautXL_ragnarok_1659952.safetensors
+```
+
+with compatible **SDXL ControlNet** models.
+
+Do not select an SD1.5 ControlNet model for an SDXL checkpoint.
+
+---
+
+# 2️⃣5️⃣ CivitAI Browser+
+
+The extension is included here:
+
+```text
+extensions\sd-civitai-browser-plus\
+```
+
+After starting WebUI, look for:
+
+```text
+CivitAI Browser+
+```
+
+The extension can be used to browse and download models.
+
+### CivitAI
+
+[![OPEN CIVITAI](https://img.shields.io/badge/🌐%20OPEN-CIVITAI-purple?style=for-the-badge)](https://civitai.com/)
+
+---
+
+# 2️⃣6️⃣ VAE
+
+VAE files go here:
+
+```text
+models\VAE\
+```
+
+Example:
+
+```text
+models/
+└── VAE/
+    └── your-vae.safetensors
+```
+
+Some of the checkpoints used in this setup already include VAE information.
+
+If the checkpoint provides an integrated VAE, you may not need a separate VAE.
+
+---
+
+# 2️⃣7️⃣ Exact Model Checklist
+
+Your original setup contained these files:
+
+## Stable Diffusion
+
+```text
+models/Stable-diffusion/
+
+├── v1-5-pruned-emaonly.safetensors
+├── realisticVisionV60B1_v51HyperVAE_418901.safetensors
+├── dreamshaperXL_lightningDPMSDE_282807.safetensors
+└── juggernautXL_ragnarok_1659952.safetensors
+```
+
+## ControlNet
+
+```text
+models/ControlNet/
+
+├── control_v11p_sd15_canny.pth
+├── control_v11f1p_sd15_depth.pth
+├── control_v11p_sd15_lineart.pth
+├── control_v11p_sd15_openpose.pth
+├── control_v11p_sd15_softedge.pth
+├── diffusers_xl_canny_mid.safetensors
+└── diffusers_xl_depth_mid.safetensors
+```
+
+## Extensions
+
+```text
+extensions/
+
+├── sd-webui-controlnet/
+└── sd-civitai-browser-plus/
+```
+
+---
+
+# 2️⃣8️⃣ Verify Everything
+
+Run these commands from the WebUI directory.
+
+### Python
+
+```powershell
+.\venv\Scripts\python.exe --version
+```
+
+Expected:
+
+```text
+Python 3.10.6
+```
+
+### PyTorch
+
+```powershell
+.\venv\Scripts\python.exe -c "import torch; print(torch.__version__); print(torch.cuda.is_available())"
+```
+
+Expected:
+
+```text
+2.1.2+cu121
+True
+```
+
+### MediaPipe
+
+```powershell
+.\venv\Scripts\python.exe -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions'))"
+```
+
+Your working setup should report a MediaPipe version with:
+
+```text
+solutions: True
+```
+
+### OpenCV
+
+```powershell
+.\venv\Scripts\python.exe -c "import cv2; print(cv2.__version__)"
+```
+
+### NumPy
+
+```powershell
+.\venv\Scripts\python.exe -c "import numpy; print(numpy.__version__)"
+```
+
+---
+
+# 2️⃣9️⃣ Final WebUI Verification
+
+At the bottom of WebUI, verify the environment.
+
+You should see approximately:
+
+```text
+version: v1.10.1
+python: 3.10.6
+torch: 2.1.2+cu121
+gradio: 3.41.2
+```
+
+Then verify:
+
+```text
+✓ Checkpoint appears
+✓ Generate works
+✓ ControlNet appears
+✓ Canny model appears
+✓ Depth model appears
+✓ OpenPose model appears
+✓ Lineart model appears
+✓ SoftEdge model appears
+✓ SDXL checkpoint appears
+✓ CivitAI Browser+ appears
+```
+
+---
+
+# 3️⃣0️⃣ First ControlNet Test
+
+Use this simple test before changing advanced settings.
+
+### Checkpoint
+
+Select:
+
+```text
+v1-5-pruned-emaonly.safetensors
+```
+
+### ControlNet
+
+Enable:
+
+```text
+ControlNet Unit 0
+```
+
+Upload a normal photograph.
+
+Select:
+
+```text
+Control Type → Canny
+```
+
+Set:
+
+```text
+Preprocessor → Canny
+Model → control_v11p_sd15_canny
+Control Weight → 1.0
+Starting Control Step → 0
+Ending Control Step → 1
+Control Mode → Balanced
+```
+
+Then generate.
+
+If the generated image follows the major edges/composition of the input, ControlNet is working.
+
+---
+
+# 3️⃣1️⃣ Recommended First Settings
+
+For SD 1.5:
+
+```text
+Width:        512
+Height:       512
+Steps:        20–30
+CFG Scale:    6–8
+Batch Size:   1
+Control Weight: 1.0
+```
+
+For SDXL:
+
+```text
+Width:        1024
+Height:       1024
+Batch Size:   1
+```
+
+SDXL generally requires considerably more VRAM than SD 1.5.
+
+---
+
+# 3️⃣2️⃣ If Generation Is Slow
+
+The biggest factors are:
+
+```text
+Resolution
+Sampling steps
+Model type
+ControlNet
+Hires. fix
+Batch size
+```
+
+For a faster test:
+
+```text
+512 × 512
+20 steps
+Batch size 1
+Hires. fix OFF
+One ControlNet unit
+```
+
+Once generation works correctly, increase quality/settings gradually.
+
+---
+
+# 3️⃣3️⃣ Troubleshooting
+
+## ControlNet is visible but models are missing
+
+Check:
+
+```text
+models\ControlNet\
+```
+
+Then restart WebUI.
+
+---
+
+## Model appears but ControlNet gives an error
+
+Check whether the checkpoint and ControlNet model belong to the same model family.
+
+For example:
+
+```text
+SD 1.5 checkpoint
+        ↓
+SD 1.5 ControlNet
+```
+
+and:
+
+```text
+SDXL checkpoint
+        ↓
+SDXL ControlNet
+```
+
+Do not mix them.
+
+---
+
+## Python error
+
+Run:
+
+```powershell
+.\venv\Scripts\python.exe --version
+```
+
+It should be:
+
+```text
+Python 3.10.6
+```
+
+---
+
+## WebUI environment becomes corrupted
+
+Close WebUI.
+
+Remove:
+
+```text
+venv/
+repositories/
+```
+
+Then start again:
+
+```powershell
+.\webui-user.bat
+```
+
+WebUI can recreate the environment.
+
+---
+
+# 3️⃣4️⃣ Important Storage Information
+
+The complete working environment can require **tens of gigabytes**.
+
+Models are intentionally not stored in GitHub.
+
+For this setup, the model collection alone can consume many GB:
+
+```text
+Stable Diffusion checkpoints
+        +
+ControlNet models
+        +
+VAE
+        +
+Python environment
+```
+
+Therefore:
+
+```text
+GitHub
+  ↓
+Source + Extensions + Configuration
+
+Local PC
+  ↓
+Python environment + Models
+```
+
+This is intentional.
+
+---
+
+# 3️⃣5️⃣ Daily Launch
+
+Once everything is installed, you don't need to repeat the setup.
+
+Simply:
+
+```powershell
+cd C:\stable-diffusion-webui-setup
+.\webui-user.bat
+```
+
+Then open the local URL shown in the terminal.
+
+---
+
+# ✅ Complete Setup Checklist
+
+```text
+SYSTEM
+[ ] Windows 10/11
+[ ] NVIDIA driver installed
+[ ] nvidia-smi works
+
+PYTHON
+[ ] Python 3.10.6 installed
+[ ] Python 3.10.6 verified
+
+GIT
+[ ] Git installed
+[ ] Repository cloned
+
+WEBUI
+[ ] WebUI v1.10.1 starts
+[ ] PyTorch 2.1.2+cu121
+[ ] Gradio 3.41.2
+
+CHECKPOINTS
+[ ] v1-5-pruned-emaonly.safetensors
+[ ] Realistic Vision V6
+[ ] DreamShaper XL Lightning
+[ ] Juggernaut XL Ragnarok
+
+CONTROLNET
+[ ] Canny
+[ ] Depth
+[ ] OpenPose
+[ ] Lineart
+[ ] SoftEdge
+[ ] SDXL Canny
+[ ] SDXL Depth
+
+EXTENSIONS
+[ ] ControlNet v1.1.455
+[ ] CivitAI Browser+
+
+TEST
+[ ] SD 1.5 generation works
+[ ] SDXL generation works
+[ ] Canny works
+[ ] Depth works
+[ ] OpenPose works
+[ ] Lineart works
+[ ] SoftEdge works
+```
+
+---
+
+# 🔗 Official Resources
+
+### AUTOMATIC1111
+
+[![AUTOMATIC1111](https://img.shields.io/badge/Official-AUTOMATIC1111-black?style=for-the-badge)](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+### ControlNet
+
+[![CONTROLNET](https://img.shields.io/badge/Official-ControlNet-blue?style=for-the-badge)](https://github.com/Mikubill/sd-webui-controlnet)
+
+### ControlNet Models
+
+[![CONTROLNET MODELS](https://img.shields.io/badge/ControlNet-Models-blue?style=for-the-badge)](https://huggingface.co/lllyasviel/ControlNet)
+
+### Hugging Face
+
+[![HUGGING FACE](https://img.shields.io/badge/Hugging%20Face-Models-yellow?style=for-the-badge)](https://huggingface.co/models)
+
+### CivitAI
+
+[![CIVITAI](https://img.shields.io/badge/CivitAI-Models-purple?style=for-the-badge)](https://civitai.com/)
+
+### Python 3.10.6
+
+[![PYTHON](https://img.shields.io/badge/Python-3.10.6-blue?style=for-the-badge)](https://www.python.org/downloads/release/python-3106/)
+
+---
+
+## Repository
+
+[![GITHUB](https://img.shields.io/badge/GitHub-oxanuragofficial-black?style=for-the-badge\&logo=github)](https://github.com/oxanuragofficial/stable-diffusion-webui-setup)
+
+---
+
+**Python 3.10.6 → Clone → Launch → Add Models → Configure ControlNet → Generate**
+
+
+
+
